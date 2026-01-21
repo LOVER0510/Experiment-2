@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Page Layout Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            padding-top: 20px;
+        }
+
+        /* LEFT SIDEBAR */
+        .sidebar {
+            width: 220px;
+            background: #fff;
+            border-radius: 6px;
+            padding: 15px;
+            height: fit-content;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            padding: 8px 0;
+            color: #050505;
+            cursor: pointer;
+        }
+
+        .sidebar ul li:hover {
+            color: #1877f2;
+        }
+
+        .create-page {
+            margin-top: 15px;
+            padding: 8px;
+            background-color: #42b72a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* CENTER CONTENT */
+        .main {
+            flex: 1;
+        }
+
+        /* COVER */
+        .cover {
+            height: 220px;
+            background: #ccc;
+            border-radius: 6px;
+            position: relative;
+        }
+
+        .page-title {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            color: white;
+        }
+
+        .page-title h1 {
+            font-size: 28px;
+        }
+
+        /* ACTION BUTTONS */
+        .actions {
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .actions button {
+            padding: 8px 14px;
+            border-radius: 4px;
+            border: 1px solid #ccd0d5;
+            background: #f0f2f5;
+            cursor: pointer;
+        }
+
+        .actions .primary {
+            background: #1877f2;
+            color: white;
+            border: none;
+        }
+
+        /* POST */
+        .post {
+            background: white;
+            margin-top: 15px;
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        .post h4 {
+            margin-bottom: 10px;
+        }
+
+        .post img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        /* RIGHT SIDEBAR */
+        .right-panel {
+            width: 260px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .card h4 {
+            margin-bottom: 10px;
+        }
+
+        .gray-box {
+            height: 150px;
+            background: #e4e6eb;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #65676b;
+        }
+
+        .invite-btn {
+            margin-top: 10px;
+            padding: 8px;
+            background: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        small {
+            color: #65676b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT SIDEBAR -->
+    <div class="sidebar">
+        <h3>Social Pro Daily</h3>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Photos</li>
+            <li>Events</li>
+            <li>Videos</li>
+            <li>Posts</li>
+            <li>Groups</li>
+            <li>Community</li>
+            <li>Info and Ads</li>
+        </ul>
+        <button class="create-page">Create a Page</button>
+    </div>
+
+    <!-- CENTER -->
+    <div class="main">
+
+        <div class="cover">
+            <div class="page-title">
+                <h1>Social Pro Daily</h1>
+                <p>Business Page</p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button>👍 Liked</button>
+            <button>Following</button>
+            <button>Share</button>
+            <button class="primary">Send Message</button>
+        </div>
+
+        <div class="post">
+            <h4>Photos</h4>
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Post Image">
+        </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+
+        <div class="card">
+            <h4>Our Story</h4>
+            <div class="gray-box">+ Tell people about your business</div>
+        </div>
+
+        <div class="card">
+            <h4>Community</h4>
+            <p><strong>Carl Ferrara</strong> and others like this</p>
+            <button class="invite-btn">Invite Friends</button>
+            <small>819,092 people like this</small><br>
+            <small>788,365 people follow this</small>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
